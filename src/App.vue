@@ -2,7 +2,16 @@
   <h1>{{ title }}</h1> 
   <p>Welcome ...</p>
   <div v-if="showModal">
-    <Modal :header="header" :text="text" theme="sale" @close="toggleModal"/>
+    <Modal   theme="sale" @close="toggleModal">
+        <h1>Super VueJs Tutorial</h1>
+        <p>Those courses are really amazing. Im thrilled by them</p>
+        <template v-slot:links>
+          <a href="#">sign up</a>
+          <a href="#">more info</a>
+
+        </template>
+
+    </Modal>
   </div>
   <button @click.shift="toggleModal">Open Modal (shift)</button>
 </template>
