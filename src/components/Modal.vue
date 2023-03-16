@@ -6,7 +6,7 @@
     </div>
 </template>
 
-<style>
+<style scoped>
     .modal {
         width: 400px;
         padding: 20px;
@@ -20,5 +20,8 @@
         background: rgba(0,0,0,0.5);
         width: 100%;
         height: 100%;
+    }
+    .modal p {
+        font-style: normal;
     }
 </style>
