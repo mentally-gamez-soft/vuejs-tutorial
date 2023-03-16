@@ -2,7 +2,7 @@
   <h1>{{ title }}</h1>
   <input type="text" ref="name">
   <button @click="handleClick">Click here !</button>
-  <Modal />
+  <Modal :header="header" :text="text" theme="sale"/>
 </template>
 
 <script>
@@ -15,7 +15,9 @@ export default {
   },
   data() {
     return {
-      title: 'My first Vue App gg'
+      title: 'My first Vue App gg',
+      header: 'Sign up for the giveaway',
+      text: 'Im learning very nice VueJs',
     }
   },
   methods: {
